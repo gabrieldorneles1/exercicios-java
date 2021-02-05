@@ -1,30 +1,28 @@
-package br.com.geekuniversity.secao03;
+package br.com.geekuniversity.secao02;
 
 import java.util.Scanner;
 
 public class Exercicio02 {
 
     public static void main(String[] args){
-    //Varíaveis
-        int quantidade_minima, quantidade_maxima;
-        float estoque_medio;
-        Scanner teclado = new Scanner(System.in);
+       //Varíaveis
+       int num1, num2, soma, multiplicacao;
+       Scanner teclado = new Scanner(System.in);
 
-        //Entradas
-        System.out.print("Informe a quantidade mínima: ");
-        quantidade_minima = teclado.nextInt();
-
-        System.out.print("Informe a quantidade maxima: ");
-        quantidade_maxima = teclado.nextInt();
+       //Entradas
+        System.out.println("Informe o Primeiro Número: ");
+        num1 = teclado.nextInt();
+        System.out.println("Informe o Segundo Número: ");
+        num2 = teclado.nextInt();
 
         //Processamento
-        estoque_medio = (quantidade_minima + quantidade_maxima) / 2;
+        soma = num1 + num2;
+        multiplicacao = soma * num1;
 
         //Saída
-        System.out.println("O estoque médio é " + estoque_medio);
+        System.out.println("O resultado da multiplicação é " + multiplicacao);
 
         teclado.close();
-
 
     }
 }
